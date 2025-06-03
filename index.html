@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Myrdev</h1>
+        <nav id="links">
+            
+            <a href="https://github.com/MyrdevIT">GitHub</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+            <button id="navigation" onclick="openNav()">&#9776;</button>
+            
+        </nav>
+        
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#work">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <main>
+
+        <section id="about">
+            <br>
+            <h2>About Me</h2><br>
+            <p>
+                Hi, I'm Myrdev, Second-year technical secondary school student and passionate programmer at the beginning of his journey. Currently looking for a mid-school internship that will have a positive, lasting impact on my future career. My current area of interest is web and mobile development.
+            </p>
+            <br>
+        </section>
+
+
+
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box" style="--img: url(html.jpg);"></div>
+                <div class="skill-box" style="--img: url(js.jpg);"></div>
+                <div class="skill-box" style="--img: url(sql.jpg);"></div>
+                <div class="skill-box" style="--img: url(pyhon.jpg);"></div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>My projects</h2><br><br>
+            <div class="container">
+                <a class="box box-1" style="--img: url(project1.png);" data-text='Python game: "Mao Boss"' href="https://github.com/MyrdevIT/mao_boss"></a>
+                <div class="box box-2" style="--img: url(project2.png);" data-text="Completely Accurate Trading Simulator"></div>
+                <div class="box box-3" style="--img: url(project3.png);" data-text="Fake CDProjekt website"></div>
+                <div class="box box-4" style="--img: url(project4.png);" data-text="This website"></div>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                If you want to contact me, you can do it via email: <a href="mailto:"></a>
+            </p>
+            
+
+    </main>
     
+
+    <script src="script.js"></script>
+
+
 </body>
 </html>
