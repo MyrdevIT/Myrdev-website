@@ -10,3 +10,9 @@ function openNav() {
     // document.body.style.backgroundColor = "white";
   }
 
+
+document.querySelectorAll('.skill-box').forEach(box => {
+box.addEventListener('click', function () {
+    this.classList.toggle('show-desc');
+  });
+});

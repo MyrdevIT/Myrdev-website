@@ -147,6 +147,31 @@ div {
 	
 }
 
+#work-mobile {
+  display: none;
+}
+
+#skills-mobile {
+  display: none;
+}
+
+#contact {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 20px;
+}
+#contact p {
+  font-size: larger;
+}
+#contact a {
+  color: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact-mobile {
+  display: none;
+}
 
 
 
@@ -158,7 +183,7 @@ div {
     all: unset;
   }
 
-  .container {
+ .container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -166,7 +191,7 @@ div {
     width: 1200px;
     height: 600px;
     transition: all 400ms;
-  }
+  } 
 
 
   .container:hover .box {
@@ -235,56 +260,11 @@ div {
   	transition-delay: 400ms;
   }
 
+
+
+
   
 
-}
-
-
-@media (max-width: 768px) {
-  a {
-    display: none;
-  }
-  
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  body {
-    transition: margin-left .5s;
-    
-  }
-
-}
 
 
 
@@ -294,24 +274,6 @@ div {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 768px) {
   #mySidenav {
     display: none;
   }
@@ -367,12 +329,34 @@ h2 {
 }
 
 .skill-box {
+    position: relative;
     width: 150px; 
     height: 150px; 
     background: var(--img) center center no-repeat;
     background-size: cover;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+
+}
+
+
+
+
+.skill-box .skill-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 5px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+    text-align: center;
+    pointer-events: none;
 }
 
 .skill-box:hover {
@@ -380,5 +364,207 @@ h2 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.skill-box:hover .skill-desc {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  a {
+    display: none;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    text-align: center;
+      background-color: black;
+  border: none;
+  color: white;
+  
+  height: 20px;
+    
+  }
+  
+  body {
+    transition: margin-left .5s;
+    
+  }
+
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sections responsive */
+
+@media (max-width: 1400px) {
+  
+  #work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgrey;
+  }
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    width: 500px;
+    height: 1200px;
+    transition: all 400ms;
+  }
+
+    .box {
+  	position: relative;
+  	background: var(--img) center center;
+  	background-size: cover;
+  	transition: all 400ms;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgrey;
+  }
+
+  #skills h2 {
+  margin-bottom: 20px;
+  }
+
+
+
+  .skills-container {
+      display: flex;
+      flex-direction: column; 
+      gap: 50px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .skill-box {
+      position: relative;
+      width: 400px; 
+      height: 160px; 
+      background: var(--img) center center no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+  
+  }
+  
+  
+  
+  
+  .skill-box .skill-desc {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.85);
+      color: #fff;
+      font-size: 1rem;
+      padding: 10px 5px;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.3s, transform 0.3s;
+      text-align: center;
+      pointer-events: none;
+  }
+  
+  .skill-box:active {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-box.show-desc .skill-desc {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

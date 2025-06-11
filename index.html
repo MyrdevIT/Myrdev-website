@@ -11,8 +11,8 @@
         <h1>Myrdev</h1>
         <nav id="links">
             
-            <a href="https://github.com/MyrdevIT">GitHub</a>
-            <a href="#resume">Resume</a>
+            <a href="https://github.com/MyrdevIT" target="_blank">GitHub</a>
+            <a href="https://drive.google.com/file/d/1zCTiS4l3iqQNcMtvLRlnZ63G20oKHgVV/view?usp=drive_link" target="_blank">Resume</a>
             <a href="#contact">Contact</a>
             <button id="navigation" onclick="openNav()">&#9776;</button>
             
@@ -20,11 +20,12 @@
         
     </header>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#work">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</button>
+        
+        <a href="https://github.com/MyrdevIT" target="_blank">GitHub</a>
+        
+        <a href="https://drive.google.com/file/d/1zCTiS4l3iqQNcMtvLRlnZ63G20oKHgVV/view?usp=drive_link" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
     </div>
 
     <main>
@@ -44,30 +45,56 @@
         <section id="skills">
             <h2>My Skills</h2>
             <div class="skills-container">
-                <div class="skill-box" style="--img: url(html.jpg);"></div>
-                <div class="skill-box" style="--img: url(js.jpg);"></div>
-                <div class="skill-box" style="--img: url(sql.jpg);"></div>
-                <div class="skill-box" style="--img: url(pyhon.jpg);"></div>
+                <div class="skill-box" style="--img: url(html.jpg);">
+                    <div class="skill-desc">HTML+CSS: Basic website creation.</div>
+                </div>
+                <div class="skill-box" style="--img: url(js.jpg);">
+                    <div class="skill-desc">JavaScript: Knowledge of syntax and writing simple programs.</div>
+                </div>
+                <div class="skill-box" style="--img: url(sql.jpg);">
+                    <div class="skill-desc">SQL: Knowledge of ground basics.</div>
+                </div>
+                <div class="skill-box" style="--img: url(pyhon.jpg);">
+                    <div class="skill-desc">Python: Knowledge of syntax and writing simple programs.</div> .</div>
+                </div>
             </div>
         </section>
+
 
         <section id="work">
             <h2>My projects</h2><br><br>
             <div class="container">
-                <a class="box box-1" style="--img: url(project1.png);" data-text='Python game: "Mao Boss"' href="https://github.com/MyrdevIT/mao_boss"></a>
-                <div class="box box-2" style="--img: url(project2.png);" data-text="Completely Accurate Trading Simulator"></div>
-                <div class="box box-3" style="--img: url(project3.png);" data-text="Fake CDProjekt website"></div>
-                <div class="box box-4" style="--img: url(project4.png);" data-text="This website"></div>
+                <a class="box box-1" style="--img: url(project1.png);" data-text='Python game: "Mao Boss"' href="https://github.com/MyrdevIT/mao_boss" target="_blank"></a>
+                <a class="box box-2" style="--img: url(project2.png);" data-text="Completely Accurate Trading Simulator" href="https://github.com/MyrdevIT/not_so_accurate_trading_simulator" target="_blank"></a>
+                <a class="box box-3" style="--img: url(project3.png);" data-text="Fake CDProjekt website" href="https://github.com/MyrdevIT/cd_projekt_fake_website" target="_blank"></a>
+                <a class="box box-4" style="--img: url(project4.png);" data-text="This website" href="https://github.com/MyrdevIT/Myrdev-website" target="_blank"></a>
 
             </div>
 
         </section>
 
+        <section id="work-mobile">
+
+        </section>
+
         <section id="contact">
-            <h2>Contact Me</h2>
+            <h2>Contact Me</h2><br>
             <p>
-                If you want to contact me, you can do it via email: <a href="mailto:"></a>
+                <a class="contact-link" href="mailto:miroslaw.m.lagan@gmail.com">E-mail: miroslaw.m.lagan@gmail.com</a>
+
+            </p><br><br>
+            <p>
+                <a class="contact-link" href="https://github.com/MyrdevIT" target="_blank">GitHub: MyrdevIT</a>
+
+            </p><br>
+            <p>
+                Phone number: +48 574 235 290
             </p>
+
+        </section>
+
+        <section id="contact-mobile">
+        </section>
             
 
     </main>
